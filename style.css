@@ -1,0 +1,126 @@
+/* Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container Principal Responsivo */
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px; /* Impede que fique gigante no PC */
+}
+
+h1 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.subtitulo {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Input de Senha */
+.campo-senha input {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.campo-senha input:focus {
+    border-color: #007bff;
+}
+
+/* Barra de Força Dinâmica */
+.barra-forca {
+    width: 100%;
+    height: 8px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+.progresso {
+    height: 100%;
+    width: 0%;
+    transition: width 0.4s ease, background-color 0.4s ease;
+}
+
+.status {
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+/* Cores do Status */
+.vazio { color: #888; }
+.fraca { color: #dc3545; }
+.media { color: #ffc107; }
+.forte { color: #28a745; }
+
+/* Lista de Requisitos */
+.lista-requisitos {
+    margin-top: 20px;
+    list-style: none;
+}
+
+.lista-requisitos li {
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+    transition: color 0.3s;
+}
+
+/* Ícones customizados usando CSS */
+.lista-requisitos li::before {
+    content: "✕";
+    position: absolute;
+    left: 0;
+}
+
+.lista-requisitos li.valido {
+    color: #28a745;
+}
+
+.lista-requisitos li.valido::before {
+    content: "✓";
+}
+
+.lista-requisitos li.invalido {
+    color: #dc3545;
+}
+
+/* Media Query para telas muito pequenas (Celulares antigos) */
+@media (max-width: 360px) {
+    .container {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 1.3rem;
+    }
+}
