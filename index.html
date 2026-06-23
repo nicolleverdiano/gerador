@@ -1,0 +1,33 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de Senha Seguro e Responsivo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>Análise de Segurança de Senha</h1>
+        <p class="subtitulo">Insira sua senha abaixo para verificar a força da criptografia baseada em entropia.</p>
+        
+        <div class="campo-senha">
+            <input type="password" id="senha" placeholder="Digite sua senha aqui...">
+        </div>
+
+        <div class="barra-forca">
+            <div id="progresso" class="progresso"></div>
+        </div>
+        <p id="texto-status" class="status">Força: <span class="vazio">Esperando senha...</span></p>
+
+        <ul class="lista-requisitos">
+            <li id="req-comprimento" class="invalido">Mínimo de 8 caracteres</li>
+            <li id="req-maiuscula" class="invalido">Pelo menos uma letra maiúscula</li>
+            <li id="req-numero" class="invalido">Pelo menos um número</li>
+            <li id="req-especial" class="invalido">Pelo menos um caractere especial (@, #, $, etc.)</li>
+        </ul>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
