@@ -20,7 +20,7 @@ body {
     background-color: #9d66d0;
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(228, 230, 236, 0.1);
+    box-shadow: 0 4px 15px rgba(251, 251, 252, 0.1);
     width: 100%;
     max-width: 450px; /* Impede que fique gigante no PC */
 }
